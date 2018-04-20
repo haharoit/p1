@@ -24,3 +24,19 @@ git branch dev
 git checkout dev
 #同git checkout -b  dev
 # git commit -a -m m ''等同于git add 和 git commit
+#从dev push 到 master
+git push origin dev:master
+#删除远程分支dev
+git push origin :dev
+
+#默认指定master分支，之后可以只用 git push
+git push -u origin master
+
+# 删除本地分支
+git branch -d dev
+
+# 删除远程分支dev
+git branch -r -d origin/dev
+git push origin --delete dev
+
+
