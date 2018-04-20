@@ -1,0 +1,21 @@
+# 配置用户信息
+git config user.name ""
+git config user.email ""
+
+# clone 项目
+git clone git@github.com:haharoit/p1.git
+
+# remote
+git remote add origin git@github.com:haharoit/p1.git
+
+# add
+git add .gitignore
+
+# commit
+git commit -m "tag"
+
+# 删除git 的 .idea 文件
+git rm --cached -r .idea
+
+# push
+git push origin master
