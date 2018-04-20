@@ -19,3 +19,8 @@ git rm --cached -r .idea
 
 # push
 git push origin master
+#创建、切换分支
+git branch dev
+git checkout dev
+#同git checkout -b  dev
+# git commit -a -m m ''等同于git add 和 git commit
