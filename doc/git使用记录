@@ -1,3 +1,8 @@
+# echo打印换行
+ echo -e "#后期加注标签\ngit log --pretty=oneline\n" >> git使用记录
+
+
+
 # 配置用户信息
 git config user.name ""
 git config user.email ""
@@ -39,4 +44,24 @@ git branch -d dev
 git branch -r -d origin/dev
 git push origin --delete dev
 
+
+
+#后期加注标签
+#列出标签
+git log --pretty=oneline
+
+#添加标签
+ git tag -a v1.0.0 905383b00
+
+#列出所有标签
+ git tag
+
+#推送到云端
+git push origin tagname
+
+#查看标签
+git show tagname
+
+#删除本地标签
+git tag -d tagname
 
