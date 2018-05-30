@@ -65,3 +65,7 @@ git show tagname
 #删除本地标签
 git tag -d tagname
 
+#合并分支dev到master
+#在dev所有代码都push到dev之后，切换到master分支，然后合并代码到master
+git checkout master
+git merge dev
