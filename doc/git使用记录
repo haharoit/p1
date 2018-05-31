@@ -69,3 +69,8 @@ git tag -d tagname
 #在dev所有代码都push到dev之后，切换到master分支，然后合并代码到master
 git checkout master
 git merge dev
+#在dev push代码到master后，或者使用git merge(本地合并远程分支)后，要把远程仓库代码更新到本地仓库
+git fetch
+#再进行合并
+git merge
+#或者使用git pull,git pull=git fetch+git merge,直接取回最新版本代码，可能会发生冲突，需要手动合并，不建议使用
