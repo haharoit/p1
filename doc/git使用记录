@@ -24,13 +24,18 @@ git rm --cached -r .idea
 
 # push
 git push origin master
-#创建、切换分支
+
+#1创建、切换分支
 git branch dev
 git checkout dev
-#同git checkout -b  dev
-# git commit -a -m m ''等同于git add 和 git commit
+
+#2创建、切换分支
+git checkout -b  dev
+#git commit -a -m m ''等同于git add 和 git commit
+
 #从dev push 到 master
 git push origin dev:master
+
 #删除远程分支dev
 git push origin :dev
 
@@ -69,8 +74,16 @@ git tag -d tagname
 git checkout master
 git merge dev
 git push
+
+
 #合并远程master到本地dev(先把远程分支fetch下来，再merge)
 git fetch origin master
 git checkout dev
 git merge master
+
+
 #git pull=git fetch+git merge,直接取回最新版本代码，可能会发生冲突，需要手动合并，不建议使用
+
+
+#修改最近一次commit但没有push到远程分支的commit message
+git commit --amend -m "your new message"
